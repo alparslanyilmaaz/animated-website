@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Homepage</title>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  </head>
+  <body>
+    <div class="under-nav">
+      <!--
+
+        Navigation menu
+
+      -->
+      <div class="nav">
+        <div class="items-container">
+          <div class="logo">
+            <span>LOGO</span>
+          </div>
+          <div class="right-bar">
+            <ul>
+              <li class="first"><a href="#">About</a></li>
+              <li class="second"><a href="#">FAQ</a></li>
+              <li class="third"><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--
+        Navigation menu ends
+    -->
+    <div class="photo-holder"></div>
+    <div class="real-photo"></div>
+
+    <div class="container">
+      <div class="general-form-holder">
+        <h1>Example Header</h1>
+        <span>This is an example of animated website with 'TweenMax'</span>
+      </div>
+    </div>
+  </body>
+
+  <!--Where animations start-->
+  <script type="text/javascript">
+        TweenMax.from(".nav", 1, {
+              width: "0%",
+              ease: Expo.easeInOut
+        })
+        TweenMax.from(".real-photo", 1, {
+              delay: "3.5",
+              width: "0%",
+              ease: Expo.easeInOut
+        })
+        TweenMax.from(".first", 1, {
+          delay: 1,
+          y: 20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        })
+        TweenMax.from(".second", 1, {
+          delay: 1.3,
+          y: 20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        })
+        TweenMax.from(".third", 1, {
+          delay: 1.6,
+          y: 20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        })
+        TweenMax.from(".logo", 2, {
+          delay: 1,
+          y: 20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        })
+        TweenMax.from(".general-form-holder",1,{
+          delay: "4.5",
+          width: "0%",
+          ease: Expo.easeInOut
+
+        })
+        TweenMax.from(".container .general-form-holder h1",1, {
+          delay: 5.5,
+          y:20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        })
+        TweenMax.from(".container .general-form-holder span",2, {
+          delay: 6.5,
+          y:20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        })
+  </script>
+</html>
